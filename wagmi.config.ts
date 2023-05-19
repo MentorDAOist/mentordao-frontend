@@ -15,13 +15,13 @@ export default defineConfig(() => {
         apiKey: env.ETHERSCAN_API_KEY!,
         chainId: chains.mainnet.id,
         contracts: [
-          {
-            name: 'WagmiMintExample',
-            address: {
-              [chains.mainnet.id]: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
-              [chains.goerli.id]: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
-            },
-          },
+          // {
+          //   name: 'WagmiMintExample',
+          //   address: {
+          //     [chains.mainnet.id]: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
+          //     [chains.goerli.id]: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
+          //   },
+          // },
         ],
       }),
       react(),
