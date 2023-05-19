@@ -1,0 +1,53 @@
+{
+  "name": "mentordao-frontend",
+  "version": "0.0.1",
+  "private": false,
+  "author": "@MaxSchnaider",
+  "scripts": {
+    "dev": "npm run wagmi && next dev",
+    "build": "npm run wagmi && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "wagmi": "wagmi generate",
+    "typecheck": "tsc --noEmit",
+    "eslint": "eslint \"**/*.+(js|jsx|ts|tsx)\"",
+    "eslint:fix": "eslint --fix \"**/*.+(js|jsx|ts|tsx)\"",
+    "prettier": "prettier --check \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|md|css)\"",
+    "prettier:fix": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|md|css)\"",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "postinstall": "yarn wagmi",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.6.1",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@rainbow-me/rainbowkit": "^1.0.0",
+    "@wagmi/cli": "^1.0.0",
+    "framer-motion": "^10.12.12",
+    "next": "^13.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "viem": "~0.3.24",
+    "wagmi": "^1.0.5",
+    "zustand": "^4.3.8"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "eslint": "^8.15.0",
+    "eslint-config-next": "^12.1.6",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  }
+}
